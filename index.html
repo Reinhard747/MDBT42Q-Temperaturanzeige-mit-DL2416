@@ -1,73 +1,300 @@
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
-
 <meta charset="utf-8">
-<link rel="stylesheet" href="style.css">
-
-
-
-<head>
-
-    
-
-    <script src="https://www.puck-js.com/puck.js"></script>
-
+<link rel="stylesheet" href="style.css">  
 <body>
 
-    
-
-    <div id="überschrift">
-        <div id="logo1">
-        <p>Ella's Auto</p>
-        </div>
-        </div>
-        <hr /> 
-        <button style="margin-top: 100px;margin-left: 100px;height: 200px; width: 700px; font-size: 40px; font-family: Arial;box-shadow: 0px 17px 10px -7px rgba(0,0,0,0.9);border: solid 2px black;border-radius: 15px;" onclick="Puck.write('D14.reset();D15.reset();D16.reset();D17.reset();D18.reset();D19.reset();D20.reset();D22.reset();\n');">Stop</button>
-
-            
-        <button style="margin-top: -20px;margin-left: 100px;height: 100px; width: 300px; font-size: 40px; font-family: Arial;box-shadow: 0px 17px 10px -7px rgba(0,0,0,0.9);border: solid 2px black;border-radius: 15px;" onclick="Puck.write('D19.reset();D17.reset();D22.reset();D15.reset();D18.set();D16.set();D20.set();D14.set();\n');">vorwärts</button>
-     
-        <button style="margin-top: 30px;margin-left: 100px;height: 100px; width: 300px; font-size: 40px; font-family: Arial;box-shadow: 0px 17px 10px -7px rgba(0,0,0,0.9);border: solid 2px black;border-radius: 15px;" onclick="Puck.write('D18.reset();D16.reset();D20.reset();D14.reset();\n');">vorwärts Stop</button>
-        
-        <hr />    
-        <button style="margin-top: 30px;margin-left: 100px;height: 100px; width: 300px; font-size: 40px; font-family: Arial;box-shadow: 0px 17px 10px -7px rgba(0,0,0,0.9);border: solid 2px black;border-radius: 15px;" onclick="Puck.write('D18.reset();D16.reset();D20.reset();D14.reset();D19.set();D17.set();D22.set();D15.set();\n');">rückwärts</button>
-     
-        <button style="margin-top: 30px;margin-left: 100px;height: 100px; width: 300px; font-size: 40px; font-family: Arial;box-shadow: 0px 17px 10px -7px rgba(0,0,0,0.9);border: solid 2px black;border-radius: 15px;" onclick="Puck.write('D19.reset();D17.reset();D22.reset();D15.reset();\n');">rückwärts Stop</button>
-        
-        <hr /> 
-        <hr /> 
-
-        <button style="margin-top: 30px;margin-left: 100px;height: 100px; width: 300px; font-size: 40px; font-family: Arial;box-shadow: 0px 17px 10px -7px rgba(0,0,0,0.9);border: solid 2px black;border-radius: 15px;" onclick="Puck.write('D22.reset();D19.reset();D16.reset();D14.reset();D20.set();D18.set();\n');">rechts</button>
-     
-        <button style="margin-top: 30px;margin-left: 100px;height: 100px; width: 300px; font-size: 40px; font-family: Arial;box-shadow: 0px 17px 10px -7px rgba(0,0,0,0.9);border: solid 2px black;border-radius: 15px;" onclick="Puck.write('D20.reset();D18.reset();\n');">rechts Stop</button>
-    
-        <hr /> 
-        <hr /> 
-       
-    
-        <button style="margin-top: 30px;margin-left: 100px;height: 100px; width: 300px; font-size: 40px; font-family: Arial;box-shadow: 0px 17px 10px -7px rgba(0,0,0,0.9);border: solid 2px black;border-radius: 15px;" onclick="Puck.write('D18.reset();D16.reset();D20.reset();D14.reset();D16.set();D14.set();\n');">links</button>
-        
-        <button style="margin-top: 50px;margin-left: 100px;height: 100px; width: 300px; font-size: 40px; font-family: Arial;box-shadow: 0px 17px 10px -7px rgba(0,0,0,0.9);border: solid 2px black;border-radius: 15px;" onclick="Puck.write('D16.reset();D14.reset();\n');">links Stop</button>
-        
-        <hr /> 
-        <hr />
-
-        <button style="margin-top: 30px;margin-left: 100px;height: 100px; width: 300px; font-size: 40px; font-family: Arial;box-shadow: 0px 17px 10px -7px rgba(0,0,0,0.9);border: solid 2px black;border-radius: 15px;" onclick="Puck.write('D22.set();D18.set();D16.set();D15.set();\n');">quer rechts</button>
-        
-        <button style="margin-top: 50px;margin-left: 100px;height: 100px; width: 300px; font-size: 40px; font-family: Arial;box-shadow: 0px 17px 10px -7px rgba(0,0,0,0.9);border: solid 2px black;border-radius: 15px;" onclick="Puck.write('D22.reset();D18.reset();D16.reset();D15.reset();\n');">quer rechts Stop</button>
-        
-        <hr /> 
-        <hr />
-
-        <button style="margin-top: 30px;margin-left: 100px;height: 100px; width: 300px; font-size: 40px; font-family: Arial;box-shadow: 0px 17px 10px -7px rgba(0,0,0,0.9);border: solid 2px black;border-radius: 15px;" onclick="Puck.write('D20.set();D19.set();D17.set();D14.set();\n');">quer links</button>
-        
-        <button style="margin-top: 50px;margin-left: 100px;height: 100px; width: 300px; font-size: 40px; font-family: Arial;box-shadow: 0px 17px 10px -7px rgba(0,0,0,0.9);border: solid 2px black;border-radius: 15px;" onclick="Puck.write('D20.reset();D19.reset();D17.reset();D14.reset();\n');">quer links Stop</button>
-        
-
-
-
-     
-
-</body>
+<div id="überschrift">
+<div id="logo1">
+<p>Reinhard's ---  MDBT42Q mit DL2416 Anzeige ohne Treiber</p>
+</div>
+</div>  
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+Bauanleitung MDBT42Q mit DL2416T und Temperatuanzeige, 2 Versorgungsspannugen 3,0 bis 5,0 Volt und über 5 Volt bis 16,0 Volt, ohne Treiber aber mit Software.<br />
+<br /> 
+Fertiger Adapter DL2416T Anzeige mit MDBT42Q siehe Bild_1, Bild_2, Bild_3 und Bild_4<br />
+<br />
+Bild_1<br />
+<img src='Bilder1/Bild1.jpg' width='1000' height='800'><br />
+Bild_2<br />  
+<img src='Bilder1/Bild2.jpg' width='1000' height='800'><br />
+Bild_3<br />  
+<img src='Bilder1/Bild3.jpg' width='1000' height='800'><br />
+Bild_4<br />  
+<img src='Bilder1/Bild4.jpg' width='1000' height='800'><br />
+<br />  
+Komplette Verdrahtung. Siehe Bild_5, Bild_6, Bild_7 und Bild_8<br />
+<br />
+Bild_5<br />  
+<img src='Bilder1/Bild5.jpg' width='1000' height='800'><br />
+Bild_6<br />  
+<img src='Bilder1/Bild6.jpg' width='1000' height='800'><br />
+Bild_7<br />  
+<img src='Bilder1/Bild7.jpg' width='1000' height='800'><br />
+Bild_8<br />  
+<img src='Bilder1/Bild8.jpg' width='1000' height='800'><br />
+<br />  
+Benötigt werden folgende Bauteile:<br />
+1 Siemens DL2416T, 4 fach Anzeige Alphanumerisch<br />
+1 Lochrasterplatine , Hartpapier 50X100mm H25PR050-----------------------0,99€<br />
+2 Stiftleisten 2,54mm 1X12 H=10,8mm gerade BKL10120911 a)0,60€-----1,20€<br />
+2 Jumper 2,54SW Kurzschlussbrücke a)0,04€-----------------------------------0,08€<br />
+1 Präzisionsfassung 24 Polig , RM 2,54-------------------------------------------0,51€<br />
+1 Präz.-Buchsenleiste 20 Polig MPE 115-1-020----------------------------------1,20€<br />
+2 JST PH CKB Crimpkontakte a)0,03€-------------------------------------------0,06€<br />
+1 JST PH2P BU , Stecker------------------------------------------------------------0,04€<br />
+1 JST PH2P ST , Buchse-------------------------------------------------------------0,11€<br />
+Silberdraht 0,5mm cirka 50 cm<br />
+Lötzinn 1mm<br />
+<br /> 
+Für die Versorgungsspannug benutze ich eine Powerbank 5 Volt 2200mA.<br />
+<br /> 
+Leiterplatte 1 zusägen auf 7 x 11 Löcher = Dummy.<br />
+Leiterplatte 2 zusägen auf 7 x 13 Löcher = Adapter.<br />
+Die IC Fassung 24-polig auf 18-polig kürzen und den Mittelsteg entfernen Pin 9 so kürzen dass der Pin 9 auf der Leiterplatte aufliegt.<br />
+<br /> 
+Wir beginnen mit Leiterplatte 2, 7 x 13 Löcher<br />
+Jetzt nehmen wir die Batterieanschlussbuchse JST PH2P ST und kleben sie mit Sekundenkleber von unten auf die Lötaugen.<br />
+Der Schlitz muss nach außen zeigen, ich habe die Buchse gleich mit rot und schwarz gekennzeichnet. Siehe Bild_9 bis Bild_11<br />
+Nun warten wir bis der Kleber ausgehärtet ist.<br />
+<br />
+Bild_9<br />
+<img src='Bilder1/Bild9.jpg' width='1000' height='800'><br /> 
+Bild_10<br />
+<img src='Bilder1/Bild10.jpg' width='1000' height='800'><br /> 
+Bild_11<br />
+<img src='Bilder1/Bild11.jpg' width='1000' height='800'><br /> 
+<br />
+In der Zwischenzeit bauen wir einen MDBT42Q Dummy<br />
+Wir nehmen die Leiterplatte 1, 7 x 11 Löcher, und löten eine Stiftleiste 6-polig und eine Stiftleite 7-polig auf der Platine.<br />
+Die Leiterplatte 2 nehmen wir als Unterteil für den Pinabstand<br />
+Jetzt nehmen wir die Präz.-Buchsenleiste 20 Polig und trennen einmal 6 Buchsen und einmal 7 Buchsen ab, am besten mit einer Puksäge einen Kontakt durchsägen.<br />
+Die beiden Buchsenleisten setzen wir auf die Stiftleisten drauf, jetzt ist der Dummy fertig und wird später verarbeitet. Siehe Bild_12 bis Bild_15<br />
+<br />
+Bild_12<br />
+<img src='Bilder1/Bild12.jpg' width='1000' height='800'><br /> 
+Bild_13<br />
+<img src='Bilder1/Bild13.jpg' width='1000' height='800'><br /> 
+Bild_14<br />
+<img src='Bilder1/Bild14.jpg' width='1000' height='800'><br />   
+<br />
+Bild_15<br />
+<img src='Bilder1/Bild15.jpg' width='1000' height='800'><br />   
+<br />  
+Weiter mit Leiterplatte 2<br />
+Mit einem Silberdraht ca. 6cm<br />
+Am Anfang vom Silberdraht biegen wir eine kleine Öse die um den gekürzten IC Pin 9 herum gelegt wird, dann weiter bis IC Pin 5<br />
+eine weitere Bücke von IC Pin 5 weiter bis IC Pin 3, eine weitere Bücke von IC Pin 3 weiter bis IC Pin 18. Siehe Bild_7, Bild_8, Bild_16 und Bild_17<br />
+<br /> 
+Jetzt ein Silberdraht über IC Pin 5 Oberseite der Platine weiter bis unterhalb der Platine für den Anschluss J1 und J2. Siehe Bild_7, Bild_8, Bild_18 und Bild_19<br />
+<br />
+Bild_18<br />  
+<img src='Bilder1/Bild18.jpg' width='1000' height='800'><br />   
+<br />
+Bild_19<br />
+<img src='Bilder1/Bild19.jpg' width='1000' height='800'><br />   
+<br />  
+Eine Stiftleisten mit 3 Stiften abschneiden und neben der Batterieanschlussbuchse fixieren für J1 und J2. Siehe Bild_7, Bild_8, Bild_20<br />
+und auf der Lötseite den mittleren Stift zwischen J1 und J2 verlöten. Siehe Bild_21<br />
+<br />
+Bild_20<br />  
+<img src='Bilder1/Bild20.jpg' width='1000' height='800'><br />   
+<br />
+Bild_21<br />  
+<img src='Bilder1/Bild21.jpg' width='1000' height='800'><br />   
+<br />  
+IC Fassung einsetzen und nur Pin 3, 5, 18 und die Öse auf der Vorderseite der Platine um Pin 9 löten. Siehe Bild_7, Bild_8, Bild_22 bis Bild_24<br />
+<br />
+Bild_22<br />  
+<img src='Bilder1/Bild22.jpg' width='1000' height='800'><br />   
+<br />
+Bild_23<br />
+<img src='Bilder1/Bild23.jpg' width='1000' height='800'><br />   
+<br /> 
+Bild_24<br />
+<img src='Bilder1/Bild24.jpg' width='1000' height='800'><br />   
+<br />     
+Verlegung der Versorgungsspannug Masse<br />
+Am Anfang vom Silberdraht biegen wir eine kleine Öse die um den Pin Massepol der Batterieanschlussbuchse gelegt wird kurz nach der Öse den Silberdraht biegen<br />
+und auf der Lötseite weiter bis IC Fassung Pin 10, 1, 2 und 4. Siehe Bild_7, Bild_8, Bild_25 und Bild_26<br />
+<br /> 
+Bild_25<br />
+<img src='Bilder1/Bild25.jpg' width='1000' height='800'><br />   
+<br /> 
+Bild_26<br />
+<img src='Bilder1/Bild26.jpg' width='1000' height='800'><br />   
+<br />     
+Verlegung der Versorgungsspannug Plus<br />
+Am Anfang vom Silberdraht biegen wir eine kleine Öse die um den Pin Pluspol der Batterieanschlussbuchse gelegt wird kurz nach der Öse den Silberdraht biegen<br />
+und auf der Lötseite weiter bis J1 und weiter bis Vin für die Buchsenleite MDBT42Q. Siehe Bild_7, Bild_8, Bild_27 und Bild_28<br />
+<br /> 
+Jetzt eine Brücke von J2 bis 3,3v Buchsenleite MDBT42Q. Siehe Bild_7, Bild_8, Bild_29 und Bild_30<br />
+<br />
+Bild_29<br />
+<img src='Bilder1/Bild29.jpg' width='1000' height='800'><br />   
+<br /> 
+Bild_30<br />
+<img src='Bilder1/Bild30.jpg' width='1000' height='800'><br />   
+<br />       
+Jetzt kommt unser gebauter Dummy zum Einsatz.<br />
+Wir nehmen den Dummy und verbinden ihn mit der Platine 2 mit einem Gummiband. Siehe Bild_31<br />
+Bild_31<br />
+<img src='Bilder1/Bild31.jpg' width='1000' height='800'><br />   
+<br />         
+Zuerst verlöten wir Pin 11 von der IC Fassung mit Pin D26 vom MDBT42Q, und Pin 8 von der IC Fassung mit Pin D14 vom MDBT42Q.<br />
+Danach entfernen wir das Gummiband und verlöten die restlichen Pin's von der IC Fassung mit Pin's vom Dummy MDBT42Q. Siehe Bild_5, Bild_6, Bild_31 und Bild_32<br />
+<br />
+Bild_32<br />
+<img src='Bilder1/Bild32.jpg' width='1000' height='800'><br />   
+<br />         
+Jetzt kommt die Masse Brücke nach Masse vom MDBT42Q. Siehe Bild_32 und Bild_33<br />
+<br /> 
+Bild_33<br />
+<img src='Bilder1/Bild33.jpg' width='1000' height='800'><br />   
+<br />           
+Fertig Hurra!<br />
+<br /> 
+Jetzt alle Verbindungen Überprüfen. Siehe Bild_5, Bild_6, Bild_7 und Bild_8<br />
+<br /> 
+Spannung über die Jamper einstellen.<br />
+<br /> 
+2 Versorgungsspannugen 3,0 bis 5,0 Volt und über 5 Volt bis 16,0 Volt. Siehe Bild_7 und Bild_8<br />
+<br /> 
+3,0 bis 5,0 Volt J1 setzen, das Display wird mit 3,0 bis 5,0 Volt versorgt. Stromaufnahme bei 3V ca. 20mmA, bei 5V ca. 40mmA. Siehe Bild_35<br />
+<br />
+Bild_35<br />
+<img src='Bilder1/Bild35.jpg' width='1000' height='800'><br />   
+<br />             
+über 5 Volt bis 16,0 Volt Jumper J2 setzen, das Display wird mit 3,3 Volt vom MDBT42Q. Siehe Bild_34<br />
+<br />
+Bild_34<br />
+<img src='Bilder1/Bild34.jpg' width='1000' height='800'><br />   
+<br />               
+Eine einfache Prüfung bevor wir das Display und den MDBT42Q einsetzen.<br />
+Wir legen an der Batterieanschlussbuchse einmal 3,0 bis 5,0 Volt an. Jumper J1, Siehe Bild_35<br />
+Bild_35<br />
+<img src='Bilder1/Bild35.jpg' width='1000' height='800'><br />   
+<br />            
+Spannung messen zwischen Masse und Plus. Siehe Bild_6, Bild_7 und Bild_8<br />
+<br /> 
+Und auch mit über 5 Volt bis 16,0 Volt . Jumper J2, Siehe Bild_34<br />
+<br />
+Bild_34<br />
+<img src='Bilder1/Bild34.jpg' width='1000' height='800'><br />   
+<br />         
+Nun können wir aber nur die Spannung Vin am MDBT42Q messen.<br />
+Das Display bekommt ja 3.3v vom MDBT42Q der noch nicht eingesetzt ist.<br />
+<br /> 
+Wenn alles in Ordnung ist können wir das Display und den MDBT42Q einsetzen.<br />
+<br /> 
+Nachdem die Software Installiert ist dauert es eine kleine weile bis die Temperatur angezeigt wird.<br />
+Zum Schluss mit save() abspeichern<br />
+<br /> 
+Viel Spaß wünscht Reinhard.<br />
+<br /> 
+Hier die Software<br />
+<br /> 
+<br /> 
+// Temperatur MDBT42Q und DL 2416T<br />
+var d;var e;var t;var a;var b;var c;var t;<br />
+<br />
+function Stelle_1(){<br />
+a = a;<br />
+digitalWrite(D16,1);digitalWrite(D14,1);digitalWrite(D15,1);<br />
+}<br />
+<br /> 
+function Stelle_2(){<br />
+a = b;<br />
+digitalWrite(D16,1);digitalWrite(D14,0);digitalWrite(D15,1);<br />
+}<br />
+<br /> 
+function Stelle_4(){<br />
+a = c;<br />
+digitalWrite(D16,1);digitalWrite(D14,0);digitalWrite(D15,0);<br />
+}<br />
+<br /> 
+function onTimer() {<br />
+<br /> 
+// 3.Stelle<br />
+<br /> 
+digitalWrite(D16,1);digitalWrite(D14,1);digitalWrite(D15,0);<br />
+<br /> 
+digitalWrite(D3,0);digitalWrite(D31,1);digitalWrite(D30,1);digitalWrite(D29,1);<br />
+digitalWrite(D26,0);digitalWrite(D27,1);digitalWrite(D28,0);digitalWrite(D16,0);<br />
+<br /> 
+t = E.getTemperature().toFixed(1);<br />
+<br /> 
+//print (t);<br />
+<br /> 
+var simpleString = (t);<br />
+a = simpleString.substring(0, 1);<br />
+b = simpleString.substring(1, 2);<br />
+c = simpleString.substring(3, 4);<br />
+<br /> 
+function wert(){<br />
+<br /> 
+if (a == 0) {<br />
+digitalWrite(D3,0);digitalWrite(D31,0);digitalWrite(D30,0);digitalWrite(D29,0);<br />
+digitalWrite(D26,1);digitalWrite(D27,1);digitalWrite(D28,0);digitalWrite(D16,0); }<br />
+<br /> 
+if (a == 1) {<br />
+digitalWrite(D3,1);digitalWrite(D31,0);digitalWrite(D30,0);digitalWrite(D29,0);<br />
+digitalWrite(D26,1);digitalWrite(D27,1);digitalWrite(D28,0);digitalWrite(D16,0); }<br />
+<br /> 
+if (a == 2) {<br />
+digitalWrite(D3,0);digitalWrite(D31,1);digitalWrite(D30,0);digitalWrite(D29,0);<br />
+digitalWrite(D26,1);digitalWrite(D27,1);digitalWrite(D28,0);digitalWrite(D16,0); }<br />
+<br /> 
+if (a == 3) {<br />
+digitalWrite(D3,1);digitalWrite(D31,1);digitalWrite(D30,0);digitalWrite(D29,0);<br />
+digitalWrite(D26,1);digitalWrite(D27,1);digitalWrite(D28,0);digitalWrite(D16,0); }<br />
+<br /> 
+if (a == 4) {<br />
+digitalWrite(D3,0);digitalWrite(D31,0);digitalWrite(D30,1);digitalWrite(D29,0);<br />
+digitalWrite(D26,1);digitalWrite(D27,1);digitalWrite(D28,0);digitalWrite(D16,0); }<br />
+<br /> 
+if (a == 5) {<br />
+digitalWrite(D3,1);digitalWrite(D31,0);digitalWrite(D30,1);digitalWrite(D29,0);<br />
+digitalWrite(D26,1);digitalWrite(D27,1);digitalWrite(D28,0);digitalWrite(D16,0); }<br />
+<br /> 
+if (a == 6) {<br />
+digitalWrite(D3,0);digitalWrite(D31,1);digitalWrite(D30,1);digitalWrite(D29,0);<br />
+digitalWrite(D26,1);digitalWrite(D27,1);digitalWrite(D28,0);digitalWrite(D16,0); }<br />
+<br /> 
+if (a == 7) {<br />
+digitalWrite(D3,1);digitalWrite(D31,1);digitalWrite(D30,1);digitalWrite(D29,0);<br />
+digitalWrite(D26,1);digitalWrite(D27,1);digitalWrite(D28,0);digitalWrite(D16,0); }<br />
+<br /> 
+if (a == 8) {<br />
+digitalWrite(D3,0);digitalWrite(D31,0);digitalWrite(D30,0);digitalWrite(D29,1);<br />
+digitalWrite(D26,1);digitalWrite(D27,1);digitalWrite(D28,0);digitalWrite(D16,0); }<br />
+<br /> 
+if (a == 9) {<br />
+digitalWrite(D3,1);digitalWrite(D31,0);digitalWrite(D30,0);digitalWrite(D29,1);<br />
+digitalWrite(D26,1);digitalWrite(D27,1);digitalWrite(D28,0);digitalWrite(D16,0); }<br />
+<br /> 
+}<br />
+<br /> 
+Stelle_1();<br />
+wert();<br />
+<br /> 
+Stelle_2();<br />
+wert();<br />
+<br /> 
+Stelle_4();<br />
+<br /> 
+wert();<br />
+<br /> 
+print (t);<br />
+<br /> 
+}<br />
+<br /> 
+setInterval(onTimer,30000); onTimer();<br />
+<br />
+<html>  
